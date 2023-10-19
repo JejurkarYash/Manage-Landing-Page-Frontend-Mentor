@@ -18,25 +18,58 @@
         <!-- Flex Container -->
         <div class=" flex itemss-center justify-between ">
             <!-- Logo -->
-            <div class="div pt-2 ">
-                <img src="./manage-landing-page-master/images/logo.svg" alt="Error">
+            <div class=" pt-2 ">
+                <img id="logo" src="./manage-landing-page-master/images/logo.svg" alt="Error">
 
             </div>
             <!-- Menu Items  -->
-            <div class=" hidden space-x-6  pt-2 font-medium text-base md:flex ">
-                <a href="#" class="hover:text-DarkGrayishBlue">Pricing</a>
-                <a href="#" class="hover:text-DarkGrayishBlue">Product</a>
+            <div class=" hidden space-x-6  pt-2 font-bold text-base md:flex ">
+                <a href="#" id="price" class="hover:text-DarkGrayishBlue">Pricing </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Product </a>
                 <a href="#" class="hover:text-DarkGrayishBlue">About Us </a>
-                <a href="#" class="hover:text-DarkGrayishBlue">Carrers</a>
-                <a href="#" class="hover:text-DarkGrayishBlue">Community</a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Carrers </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Community </a>
             </div>
 
             <!-- Button  -->
-            <<a href="#"
-                class=" p-2 px-6 pt-2 text-white shadow-lg shadow-VeryPaleRed bg-BrightRed rounded-full hover:bg-gray-800 hover:shadow-gray-600">
-                Get
-                Started</a>
+            <a href="#"
+                class="hidden p-2 px-6 pt-2 text-white shadow-lg shadow-VeryPaleRed bg-BrightRed rounded-full hover:bg-gray-800 hover:shadow-gray-600 md:block "
+                id="button">
+                Get Started</a>
+
+            <!-- Hamburger Icon -->
+
+            <button id="menu-btn" class=" open block hamburger md:hidden focus:outline-none">
+
+
+                <img src=" /manage-landing-page-master/images/icon-hamburger.svg" id="menuIcon" class="menu">
+
+
+            </button>
+
+            <!-- CLose Button -->
+            <button id="close-btn" class=" open block hamburger hidden md:hidden focus:outline-none">
+
+
+                <img src=" /manage-landing-page-master/images/icon-close.svg">
+
+
+            </button>
+
         </div>
+        <!-- Mobile Menu -->
+        <div id="menu-item" class="  md:hidden">
+            <div id="Menus"
+                class="  absolute flex flex-col font-bold items-center hidden self-end py-8 space-y-6 mt-10 bg-white text-DarkBlue rounded-xl sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ">
+                <a href="#" id="price" class="hover:text-DarkGrayishBlue">Pricing </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Product </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">About Us </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Carrers </a>
+                <a href="#" class="hover:text-DarkGrayishBlue">Community </a>
+            </div>
+
+        </div>
+
 
     </nav>
     <!-- Hero Section  -->
@@ -57,7 +90,7 @@
 
                 <div class="div flex justify-center md:justify-start">
                     <a href="#"
-                        class=" p-2 px-6 pt-2 text-white shadow-lg shadow-VeryPaleRed bg-BrightRed rounded-full hover:bg-gray-800 hover:shadow-gray-600">Get
+                        class=" Btn p-2 px-6 pt-2 text-white shadow-lg shadow-VeryPaleRed bg-BrightRed rounded-full hover:bg-gray-800 hover:shadow-gray-600">Get
                         Started</a>
                 </div>
             </div>
@@ -241,7 +274,7 @@
     <section id="cta" class="bg-BrightRed">
         <!-- FLex Container -->
         <div
-            class=" container flex flex-col items-center justify-between sapce-y-12 mx-auto px-6  py-24 md:py-12 md:flex-row md:space-y-5 md:space-x-10">
+            class=" container flex flex-col items-center justify-between sapce-y-12 mx-auto px-6  py-24 md:py-12 md:flex-row md:space-y-5 md:space-x-5">
 
             <h2
                 class="font-bold text-white mt-10 text-4xl text-center leading-tight md:text-4xl md:text-left md:max-w-xl md:pr-14 ">
@@ -256,6 +289,79 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
+    <footer class="bg-VeryDarkBlue">
+        <!-- Flex Container -->
+        <div
+            class=" container flex flex-col-reverse md:space-x-[18vw]  mx-auto px-6 py-12 justiyf-between space-y-12 md:flex-row md:space-y-0">
+            <!-- Logo and Social Media Links  -->
+            <div
+                class=" flex flex-col-reverse   items-center space-y-12 justify-between md:flex-col  md:space-y-0 md:items-start ">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2023 , All Rights Reserved
+                </div>
+                <!-- Logo -->
+                <div class="">
+                    <img src="/manage-landing-page-master/images/logo.svg" class="h-5 md:h-8  " alt="">
+                </div>
+                <!-- Social Link Container -->
+                <div class="flex  justify-center  space-x-5 ">
+                    <a href="#">
+                        <img src="/manage-landing-page-master/images/icon-facebook.svg" class="h-5  " alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/manage-landing-page-master/images/icon-youtube.svg" class="h-5  " alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/manage-landing-page-master/images/icon-twitter.svg" class="h-5  " alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/manage-landing-page-master/images/icon-pinterest.svg" class="h-5  " alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/manage-landing-page-master/images/icon-instagram.svg" class="h-5 " alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- List Container -->
+            <div class="flex  justify-around space-x-32 ">
+                <div class="flex flex-col space-y-3 text-white">
+
+                    <a href="#" class="hover:text-BrightRed">Home</a>
+                    <a href="#" class="hover:text-BrightRed">Pricing</a>
+                    <a href="#" class="hover:text-BrightRed">products</a>
+                    <a href="#" class="hover:text-BrightRed">About Us</a>
+                </div>
+
+                <div class="flex flex-col space-y-3 text-white">
+
+                    <a href="#" class="hover:text-BrightRed">Careers</a>
+                    <a href="#" class="hover:text-BrightRed">Community</a>
+                    <a href="#" class="hover:text-BrightRed">Privacy Policy</a>
+
+                </div>
+            </div>
+            <!-- Input Container-->
+            <div class="flex flex-col  justify-between">
+                <form action="">
+                    <div class="flex space-x-5">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Update in your inbox ">
+                        <button
+                            class="px-6 py-2 text-white rounded-full bg-BrightRed hover:bg-BrightRedLight focus:outline-none">Go</button>
+
+                    </div>
+                </form>
+                <div class="text-white hidden   md:block">
+                    Copyright &copy; 2023 , All Rights Reserved
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script src="App.js"></script>
 
 </html>

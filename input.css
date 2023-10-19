@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap');
+
+
+*{
+  font-family:'Be Vietnam Pro  ', sans-serif ;
+}
+
+body{
+ background-image: url(/manage-landing-page-master/images/bg-tablet-pattern.svg);
+ background-repeat: no-repeat;
+ background-size: 800px;
+ background-position: 115% -15%;
+ font-family: 'Be Vietnam Pro';
+}
+#cta{
+    background-image: url(/manage-landing-page-master/images/bg-simplify-section-desktop.svg);
+    background-repat:no-repeat;
+}
+
+
+
+@media(max-width: 576px){
+    body{
+        background-position: 50px -50px;
+        background-size:500px;
+
+    }
+
+    #cta{
+        background-image:url(/manage-landing-page-master/images/bg-simplify-section-mobile.svg);
+
+    }
+}
